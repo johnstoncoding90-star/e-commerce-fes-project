@@ -141,3 +141,25 @@ button:active {
 HIGHLIGHTS
 
 */
+
+.highlight__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.highlight {
+padding: 0 24px;
+width: calc(100% / 3);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.section__title {
+    margin-top: 32px;
+}
+
+.highlight__para {
+    text-align: center;
+}
