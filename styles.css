@@ -330,7 +330,48 @@ FOOTER
 
 */
 
+.no-cursor {
+    cursor: not-allowed;
+}
+
+footer {
+    background-color:rgb(36, 36, 36);
+}
+.container {
+    padding: 56px 0px;
+}
+
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__logo--img {
+    width: 160px;
+    filter: grayscale(1) invert(1);
+}
 
 
+.footer__list {
+    margin: 20px 0px 24px;
+}
 
+.footer__link {
+    padding: 0px 8px;
+    color: white;
+}
 
+.footer__copyright {
+    color: white;
+}
