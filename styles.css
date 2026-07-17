@@ -131,6 +131,8 @@ button:active {
     text-align: center;
     border: none;
     color:#7342d6;
+    display: none;
+
 }
 
 .menu__backdrop {
@@ -144,9 +146,20 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility:hidden;
 }
 
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden
+}
 .menu__links {
     display: flex;
     flex-direction: column;
@@ -211,7 +224,7 @@ header {
 
 .book__lover {
     width: 100%;
-    max-height: 40vh;
+    max-height: 200px;
 }
 
 .container {
@@ -441,4 +454,14 @@ footer {
     color: white;
 }
 
+@media (max-width: 550px) {
+    .nav__links {
+        display: none;
+    }
 
+
+.btn__menu {
+    display: block;
+}
+
+}
